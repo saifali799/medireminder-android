@@ -175,3 +175,19 @@ Run `flutter doctor` to check that your setup matches before running the app.
 - Write commit messages in the imperative: "Add medicine form", not "Added medicine form".
 - Keep each commit to one change.
 - Run `git pull upstream main` before starting new work.
+
+- ## Folder Structure
+
+
+medireminder-android/
+├── lib/
+│   ├── main.dart            # App entry point
+│   ├── models/              # Data classes (Medicine, Reminder, DoseLog)
+│   ├── database/            # SQLite helper and queries
+│   ├── screens/             # UI screens (list, form, schedule, history)
+│   ├── services/            # Notification scheduling logic
+│   └── widgets/             # Reusable UI components
+├── android/                 # Android platform files
+├── test/                    # Unit and widget tests
+└── pubspec.yaml             # Dependencies and project config
+
